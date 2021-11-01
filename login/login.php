@@ -12,25 +12,6 @@
 </head>
 
 <body class="body">
-<div class="login-page">
-    <div class="form">
-        <form action="" method="post">
-            <div class="user_image">
-                <img src="user_icon.png" alt="">
-            </div>
-            <!--<div class="error__message" id="error-message">
-            <p class="text_message"><i class="fas fa-info"></i>  Usuário ou senha incorretos</p>
-            </div> -->
-            <input type="email" id="email" name="email" placeholder="&#xf007;  E-mail"/>
-            <input type="password" id="senha" name="senha" placeholder="&#xf023;  Senha"/>
-            <br>
-            <br>
-            <input type="submit" value="ENTRAR" class="button">
-        </form>
-    </div>
-</body>
-
-</html>
 <?php
 include('Conexao.php');
 
@@ -69,3 +50,22 @@ if (isset($_POST['email']) || isset($_POST['senha'])){
 }
 
 ?>
+<div class="login-page">
+    <div class="form">
+        <form action="" method="post">
+            <div class="user_image">
+                <img src="user_icon.png" alt="">
+            </div>
+            <!--<div class="error__message" id="error-message">
+            <p class="text_message"><i class="fas fa-info"></i>  Usuário ou senha incorretos</p>
+            </div> -->
+            <input type="email" id="email" name="email" placeholder="&#xf007;  E-mail"/>
+            <input type="password" id="senha" name="senha" placeholder="&#xf023;  Senha"/>
+            <br>
+            <br>
+            <input type="submit" value="ENTRAR" class="button">
+        </form>
+    </div>
+</body>
+
+</html>
