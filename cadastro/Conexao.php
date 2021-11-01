@@ -1,6 +1,5 @@
 <?php
 
-
 class Conexao
 {
     private $server = "localhost"; //onde esta o bd

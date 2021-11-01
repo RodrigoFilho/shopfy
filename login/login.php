@@ -1,3 +1,18 @@
+<?php
+include('conexao.php');
+if(empty($_POST['email']) || empty($_POST['senha'])){
+    header('location: login.php');
+    exit();
+} else{
+    $email  = mysqli_real_escape_string($conexao, $_POST['email']);
+    $senha  = mysqli_real_escape_string($conexao, $_POST['senha']);
+
+    $sql_command->executeSelect ("select funcionario where email = {$email} and senha {$senha}");
+    $sql_result = mysqli_query($conexao, $sql_command);
+    $linha->rowCount() > 0;
+    echo $linha, exit();
+}
+?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 <html>
@@ -12,44 +27,6 @@
 </head>
 
 <body class="body">
-<?php
-include('Conexao.php');
-
-//previnir mysqli
-$mysqli = new mysqli("localhost","root","","supermercado_bd");
-
-if (isset($_POST['email']) || isset($_POST['senha'])){
-    if (!empty($_POST['email'])) {
-        echo "Favor inserir seu email";
-    }elseif (!empty($_POST['senha'])){
-        echo "Favor inserir sua senha";
-    }
-} else{
-
-    $email = $mysqli->real_escape_string($_POST['email']);
-    $senha = $mysqli->real_escape_string($_POST['senha']);
-
-    $sql = "select from funcionario where 'senha' = $senha and email = $email";
-    $sql_query = $mysqli->query($sql) or die("Falha na exucução do código SQL");
-
-    $linhas = $sql_query->num_rows;
-    if ($linhas == 1){
-        $email = $sql_query->fetch_assoc();
-
-        if (!isset($_SESSION)){
-            session_start();
-        }
-        $_SESSION['email'] = $email['email'];
-
-        header("Location: ../index.html");
-
-    }else{
-        echo "Email ou senha incorretos!";
-        return;
-    }
-}
-
-?>
 <div class="login-page">
     <div class="form">
         <form action="" method="post">
