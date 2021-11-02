@@ -7,7 +7,7 @@ if(empty($_POST['email']) || empty($_POST['senha'])){
     $email  = mysqli_real_escape_string($conexao, $_POST['email']);
     $senha  = mysqli_real_escape_string($conexao, $_POST['senha']);
 
-    $sql_command->executeSelect ("select funcionario where email = {$email} and senha {$senha}");
+    $sql_command->executeSelect ("select funcionario where email = '{$email}' and senha '{$senha}'");
     $sql_result = mysqli_query($conexao, $sql_command);
     $linha->rowCount() > 0;
     echo $linha, exit();
