@@ -1,5 +1,5 @@
 <?php
-include('conexao.php');
+include('Conexao.php');
 if(empty($_POST['email']) || empty($_POST['senha'])){
     header('location: login.php');
     exit();
