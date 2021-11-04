@@ -268,15 +268,25 @@ header li:hover{
 .footer__icons i:hover{
   cursor: pointer;
   transform: translate(-.3rem, -.3rem) rotate(-20deg)
+
 }
-
-
 
 .titulo__copirait{
   display: block;
   text-align: center;
   margin-top: 10.5rem;
   font-size: 10pt;
+}
+
+.contato{
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 10px 10px;
+  width: 400px;
+  height: 100px;
+
+  background-color: var(--dark-color-lighten);
+  border-radius: 10px;
 }
 
 /*----- scorll lateral -----*/
