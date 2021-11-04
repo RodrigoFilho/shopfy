@@ -238,7 +238,7 @@ header li:hover{
   transition-delay: .2s;
   opacity: 1;
 }
-/*----- footer 
+/*----- footer -----*/
 .footer{
   display: flex;
   position: relative;
@@ -269,7 +269,8 @@ header li:hover{
   cursor: pointer;
   transform: translate(-.3rem, -.3rem) rotate(-20deg)
 }
------*/
+
+
 
 .titulo__copirait{
   display: block;
