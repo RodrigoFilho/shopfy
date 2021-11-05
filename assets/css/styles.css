@@ -7,6 +7,7 @@
   --dark-color: #272D40;
   --dark-color-lighten: #F2F5FF;
   --blue-color: cornflowerblue;
+  --text-color: hsl(152%, 4%, 35%);
   /*----- fontes -----*/
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
@@ -264,7 +265,8 @@ header li:hover{
   padding-top: 10px;
   font-size: 20pt;
   gap: 18px;
-} 
+}
+
 .footer__icons i:hover{
   cursor: pointer;
   transform: translate(-.3rem, -.3rem) rotate(-20deg)
@@ -278,15 +280,37 @@ header li:hover{
   font-size: 10pt;
 }
 
-.contato{
+.footer__subscribe{
+  background-color: var(--first-color-lighten);
+  padding: .75rem;
   display: flex;
-  justify-content: center;
-  padding: 20px 20px 10px 10px;
-  width: 400px;
-  height: 100px;
+  justify-content: space-between;
+  border-radius: .5rem;
+}
 
-  background-color: var(--dark-color-lighten);
+.footer__input{
+  width: 70%;
+  padding: 0 .5rem;
+  background: none;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.footer__button{
+  padding: 0.6rem;
+
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+
+}
+
+.contato{
   border-radius: 10px;
+  background-color: var(--dark-color-lighten);
 }
 
 /*----- scorll lateral -----*/
