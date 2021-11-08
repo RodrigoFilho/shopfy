@@ -60,7 +60,7 @@ class Conexao
             //criar uma instância da classe
             $bd = new Conexao();
             //criar uma variável para receber o comando insert
-            $sql = "select * from alunos where email = '{this->EMAIL}' and senha '{this->SENHA}'";
+            $sql = "select * from funcionario where email = '{this->EMAIL}' and senha = '{this->SENHA}'";
 
             return $bd->executeSelect($sql);
         }catch(PDOException $msg){

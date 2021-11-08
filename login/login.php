@@ -1,7 +1,7 @@
 <?php
 header("Content-type:text/html; charset=utf8");
 //importa a classe conexão
-require_once "classes/Conexao.php";
+require_once "Conexao.php";
 //criar uma instância da classe conexão login
 $Conexao = new Conexao();
 //botao login
@@ -10,7 +10,7 @@ if(isset($_POST["entrar"])){
     //testar se login deu certo
     if ($result != 0){
         //login correto / enviar para tela inicial do sistema
-        header('location:index.php');
+        header('location:../index.html');
     }else{
         //login incorreto / dar a mensagem de erro para o usuário
         echo "<script>alert('Login ou senha incorretos.'</script>)";
