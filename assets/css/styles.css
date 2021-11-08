@@ -53,6 +53,10 @@ img {
   background-color: var(--blue-color);
   color: white;
 }
+.img__nav{
+  width: 8em;
+  height: 5em;
+}
 .titulo__promo{
   text-align: center;
   list-style: none;
