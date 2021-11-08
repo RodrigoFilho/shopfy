@@ -51,5 +51,21 @@ class Conexao
         echo "Não foi possível executar o comando" . $msg -> getMessage();
     }
 }
+    public function login(){
+        try {
+            //preencher campos
+            $this->EMAIL = $_POST["email"];
+            $this->SENHA = $_POST["senha"];
+
+            //criar uma instância da classe
+            $bd = new Conexao();
+            //criar uma variável para receber o comando insert
+            $sql = "select * from alunos where email = '{this->EMAIL}' and senha '{this->SENHA}'";
+
+            return $bd->executeSelect($sql);
+        }catch(PDOException $msg){
+            echo "Não foi possível realizar o login com os dados".$msg->getMessage();
+        }
+    }
 }
 ?>

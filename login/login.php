@@ -1,18 +1,24 @@
 <?php
-include('Conexao.php');
-if(isset($_POST['email']) && isset($_POST['senha'])){
-    header('location: index.html');
-    exit();
-} else{
-    $email  = mysqli_real_escape_string($Conexao, $_POST['email']);
-    $senha  = mysqli_real_escape_string($Conexao, $_POST['senha']);
-
-    $sql_command->executeSelect ("select funcionario where email = '{$email}' and senha '{$senha}'");
-    $sql_result = mysqli_query($Conexao, $sql_command);
-    $linha->rowCount() > 0;
-    echo $linha, exit();
+header("Content-type:text/html; charset=utf8");
+//importa a classe conexão
+require_once "classes/Conexao.php";
+//criar uma instância da classe conexão login
+$Conexao = new Conexao();
+//botao login
+if(isset($_POST["entrar"])){
+    $result = $Conexao->login();
+    //testar se login deu certo
+    if ($result != 0){
+        //login correto / enviar para tela inicial do sistema
+        header('location:index.php');
+    }else{
+        //login incorreto / dar a mensagem de erro para o usuário
+        echo "<script>alert('Login ou senha incorretos.'</script>)";
+    }
 }
+
 ?>
+
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 <html>
@@ -40,7 +46,7 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
             <input type="password" id="senha" name="senha" placeholder="&#xf023;  Senha"/>
             <br>
             <br>
-            <input type="submit" value="ENTRAR" class="button">
+            <input type="submit" value="ENTRAR" name="entrar" class="button">
         </form>
     </div>
 </body>
