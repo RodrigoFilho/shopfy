@@ -161,10 +161,11 @@ header li:hover{
 .titulo__filtro button{
   background-color: cornflowerblue;
   border: none;
+  margin-bottom: 160px;
 }
 /*----- produtos -----*/
 .container-1 {
-  height: 100vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,6 +269,7 @@ header li:hover{
   padding-top: 30px;
   padding-bottom: 20px;
   padding-left: 50px;
+  margin-top: 200px;
 
   background-color: cornflowerblue;
   color: white;
