@@ -8,7 +8,7 @@ $Conexao = new Conexao();
 if(isset($_POST["entrar"])){
     $result = $Conexao->login();
     //testar se login deu certo
-    if ($result != 0){
+    if ($result > 0){
         //login correto / enviar para tela inicial do sistema
         header('location:../index.html');
     }else{
