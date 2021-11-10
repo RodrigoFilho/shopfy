@@ -173,6 +173,10 @@ header li:hover{
 }
 
 .service .text {
+  display: flex;
+  justify-content: center;
+  text-justify: center;
+
   font-size: 1.5rem;
   color: #777;
 }
