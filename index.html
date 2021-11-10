@@ -21,6 +21,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family-Poppins:wght@400;500;600&display-swap" rel="stylesheet">
+  <!-- carrinho script -->
+  <script src="/assets/js/store.js" async></script>
   <!--Icone-->
   <link rel="shortcut icon" href="assets/img/favico.ico" type="image/x-icon">
   <!--Título-->
@@ -34,12 +36,14 @@
     <img src="assets/img/favico.ico" alt="" class="img__nav" href="#">
     <nav id="navbar">
       <ul id="menu">
-        <li><a onClick="abrirProdutos()">Produtos</a></li>
+        <li><a href="index.html" style="color: white; text-decoration: none;"> Produtos</a></li>
         <li>Lojas</li>
         <li>Ofertas</li>
         <li><a href="#categoria" style="color: white; text-decoration: none;">Promoções</a></li>
         <li>Contato</li>
-        <li><i class="fas fa-shopping-cart"></i> Carrinho</li>
+        <li><i class="fas fa-shopping-cart"></i>
+          <a href="/assets/carrinho/carrinho.html" style="color: white; text-decoration: none;"> Carrinho</a>
+        </li>
       </ul>
     </nav>
     <div class="btn-form">
@@ -94,7 +98,7 @@
       </button>
     </div>
   </section>
-  
+
   <!-- serviços -->
   <section class="section services">
     <div class="service-center container">
@@ -137,19 +141,65 @@
   </div>
 
   <!--Card dos produtos-->
+  <section class="container1 content-section">
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Carne</span>
+        <img class="shop-item-image" src="/assets/img/55.png">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$12.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Guaraná</span>
+        <img class="shop-item-image" src="/assets/img/0000078910942.jpg">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$1.00</span>
+          <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Molho Madeiro</span>
+        <img class="shop-item-image" src="/assets/img/0000040198651.png">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$2.29</span>
+          <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Flan de Morango</span>
+        <img class="shop-item-image" src="/assets/img/78911260.png">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$1.10</span>
+          <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
   <section id="categoria">
     <div class="card_produtos">
       <div class="container-1">
-
         <div class="card-1">
           <img src="assets/img/55.png" alt="" class="card__img-1">
           <div class="card__content-1">
             <div class="card__data-1">
               <h1 class="card__title-1">Carne da boa</h1>
-              <span class="card__preci-1">R$500</span>
+              <span class="card__preci-1">$500</span>
               <p class="card__description-1">A carne está cara mas teodos temos que comprar então vai esse preço mesmo.
               </p>
-              <a href="#" class="card__button-1">Comprar agora</a>
+              <button class="card__button-1" type="button">Comprar </button>
             </div>
           </div>
         </div>
@@ -197,6 +247,24 @@
     </div>
   </section>
 
+  <!-- carrinho -->
+  <section class="container content-section2">
+    <h2 class="section-header">CARRINHO</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITENS</span>
+      <span class="cart-price cart-header cart-column">PREÇO</span>
+      <span class="cart-quantity cart-header cart-column">QUANTIDADE</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">$0.00</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
+  </section>
+
+  <!-- rodapé -->
   <footer class="footer">
     <div class="footer__pessoas">
       <li class="titulo__footer__pessoas">Os mais pesados do cotemig</li>
