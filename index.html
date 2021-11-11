@@ -36,14 +36,11 @@
     <img src="assets/img/favico.ico" alt="" class="img__nav" href="#">
     <nav id="navbar">
       <ul id="menu">
-        <li><a href="index.html" style="color: white; text-decoration: none;"> Produtos</a></li>
+        <li><a href="/assets/produtos/produtos.html" style="color: white; text-decoration: none;"> Produtos</a></li>
         <li>Lojas</li>
         <li>Ofertas</li>
         <li><a href="#categoria" style="color: white; text-decoration: none;">Promoções</a></li>
         <li>Contato</li>
-        <li><i class="fas fa-shopping-cart"></i>
-          <a href="/assets/carrinho/carrinho.html" style="color: white; text-decoration: none;"> Carrinho</a>
-        </li>
       </ul>
     </nav>
     <div class="btn-form">
@@ -109,13 +106,13 @@
       </div>
 
       <div class="service">
-        <span class="icon"><i class="bx bx-gift"></i></span>
+        <span class="icon"><i class="fab fa-cc-apple-pay"></i></i></span>
         <h4>Pagamento Seguro</h4>
         <span class="text">Parcelamento de até 12X</span>
       </div>
 
       <div class="service">
-        <span class="icon"><i class="bx bx-headphone"></i></span>
+        <span class="icon"><i class="fas fa-clock"></i></span>
         <h4>Suporte 24 Horas</h4>
         <span class="text">Estamos a disposição</span>
       </div>
@@ -125,7 +122,7 @@
   <!--Dropdown-->
   <div class="titulo__filtro" style="font: bold 2em 'Poppins', sans-serif;">
     <div class="container__filtro">
-      <div class="dropdown dropright">
+      <div class="dropdown dropright color-title">
         <p>Filtre pela categoria do produto:</p>
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
           Selecione
@@ -141,52 +138,6 @@
   </div>
 
   <!--Card dos produtos-->
-  <section class="container1 content-section">
-    <div class="shop-items">
-      <div class="shop-item">
-        <span class="shop-item-title">Carne</span>
-        <img class="shop-item-image" src="/assets/img/55.png">
-        <div class="shop-item-details">
-          <span class="shop-item-price">$12.99</span>
-          <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="shop-items">
-      <div class="shop-item">
-        <span class="shop-item-title">Guaraná</span>
-        <img class="shop-item-image" src="/assets/img/0000078910942.jpg">
-        <div class="shop-item-details">
-          <span class="shop-item-price">$1.00</span>
-          <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="shop-items">
-      <div class="shop-item">
-        <span class="shop-item-title">Molho Madeiro</span>
-        <img class="shop-item-image" src="/assets/img/0000040198651.png">
-        <div class="shop-item-details">
-          <span class="shop-item-price">$2.29</span>
-          <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="shop-items">
-      <div class="shop-item">
-        <span class="shop-item-title">Flan de Morango</span>
-        <img class="shop-item-image" src="/assets/img/78911260.png">
-        <div class="shop-item-details">
-          <span class="shop-item-price">$1.10</span>
-          <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
-        </div>
-      </div>
-    </div>
-
-  </section>
 
   <section id="categoria">
     <div class="card_produtos">
@@ -199,7 +150,7 @@
               <span class="card__preci-1">$500</span>
               <p class="card__description-1">A carne está cara mas teodos temos que comprar então vai esse preço mesmo.
               </p>
-              <button class="card__button-1" type="button">Comprar </button>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
             </div>
           </div>
         </div>
@@ -212,7 +163,7 @@
               <span class="card__preci-1">R$500</span>
               <p class="card__description-1">A carne está cara mas teodos temos que comprar então vai esse preço mesmo.
               </p>
-              <a href="#" class="card__button-1">Comprar agora</a>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
             </div>
           </div>
         </div>
@@ -226,7 +177,7 @@
               <p class="card__description-1">Um dos melhores flans de caramelo do mundo cara sério, confia na call do
                 homem.
               </p>
-              <a href="#" class="card__button-1">Comprar agora</a>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
             </div>
           </div>
         </div>
@@ -239,29 +190,126 @@
               <span class="card__preci-1">$99</span>
               <p class="card__description-1">um tênis que todos querem ter né cara é impressionante, to quase tirando do
                 estoque e botando no meu guardaroupa slc.</p>
-              <a href="#" class="card__button-1">Comprar agora</a>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- carrinho -->
-  <section class="container content-section2">
-    <h2 class="section-header">CARRINHO</h2>
-    <div class="cart-row">
-      <span class="cart-item cart-header cart-column">ITENS</span>
-      <span class="cart-price cart-header cart-column">PREÇO</span>
-      <span class="cart-quantity cart-header cart-column">QUANTIDADE</span>
+    <div class="card_produtos">
+      <div class="container-1">
+        <div class="card-1">
+          <img src="assets/img/55.png" alt="" class="card__img-1">
+          <div class="card__content-1">
+            <div class="card__data-1">
+              <h1 class="card__title-1">Carne da boa</h1>
+              <span class="card__preci-1">$500</span>
+              <p class="card__description-1">A carne está cara mas teodos temos que comprar então vai esse preço mesmo.
+              </p>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-1">
+          <img src="assets/img/55.png" alt="" class="card__img-1">
+          <div class="card__content-1">
+            <div class="card__data-1">
+              <h1 class="card__title-1">Carne da boa</h1>
+              <span class="card__preci-1">R$500</span>
+              <p class="card__description-1">A carne está cara mas teodos temos que comprar então vai esse preço mesmo.
+              </p>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-1">
+          <img src="assets/img/78911260.png" alt="" class="card__img-1">
+          <div class="card__content-1">
+            <div class="card__data-1">
+              <h1 class="card__title-1">Flan de caramelo</h1>
+              <span class="card__preci-1">R$4,50</span>
+              <p class="card__description-1">Um dos melhores flans de caramelo do mundo cara sério, confia na call do
+                homem.
+              </p>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-1">
+          <img src="assets/img/img.png" alt="" class="card__img-1">
+          <div class="card__content-1">
+            <div class="card__data-1">
+              <h1 class="card__title-1">Nike Air Jordan</h1>
+              <span class="card__preci-1">$99</span>
+              <p class="card__description-1">um tênis que todos querem ter né cara é impressionante, to quase tirando do
+                estoque e botando no meu guardaroupa slc.</p>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="cart-items">
+
+    <div class="card_produtos">
+      <div class="container-1">
+        <div class="card-1">
+          <img src="assets/img/55.png" alt="" class="card__img-1">
+          <div class="card__content-1">
+            <div class="card__data-1">
+              <h1 class="card__title-1">Carne da boa</h1>
+              <span class="card__preci-1">$500</span>
+              <p class="card__description-1">A carne está cara mas teodos temos que comprar então vai esse preço mesmo.
+              </p>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-1">
+          <img src="assets/img/55.png" alt="" class="card__img-1">
+          <div class="card__content-1">
+            <div class="card__data-1">
+              <h1 class="card__title-1">Carne da boa</h1>
+              <span class="card__preci-1">R$500</span>
+              <p class="card__description-1">A carne está cara mas teodos temos que comprar então vai esse preço mesmo.
+              </p>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-1">
+          <img src="assets/img/78911260.png" alt="" class="card__img-1">
+          <div class="card__content-1">
+            <div class="card__data-1">
+              <h1 class="card__title-1">Flan de caramelo</h1>
+              <span class="card__preci-1">R$4,50</span>
+              <p class="card__description-1">Um dos melhores flans de caramelo do mundo cara sério, confia na call do
+                homem.
+              </p>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-1">
+          <img src="assets/img/img.png" alt="" class="card__img-1">
+          <div class="card__content-1">
+            <div class="card__data-1">
+              <h1 class="card__title-1">Nike Air Jordan</h1>
+              <span class="card__preci-1">$99</span>
+              <p class="card__description-1">um tênis que todos querem ter né cara é impressionante, to quase tirando do
+                estoque e botando no meu guardaroupa slc.</p>
+              <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="cart-total">
-      <strong class="cart-total-title">Total</strong>
-      <span class="cart-total-price">$0.00</span>
-    </div>
-    <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
   </section>
 
   <!-- rodapé -->
