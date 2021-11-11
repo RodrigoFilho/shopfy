@@ -8,12 +8,8 @@ body {
   background: linear-gradient(to left, white, white);
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
-}
-.body{
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../assets/img/Design sem nome.png"); 
 }
 
 .login-page {
