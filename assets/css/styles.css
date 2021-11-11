@@ -345,10 +345,10 @@ header li:hover{
   display: flex;
   position: relative;
   height: 100%;
-  gap: 50px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  padding-left: 50px;
+  gap: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  padding-left: 5vh;
   margin-top: 200px;
 
   background-color: cornflowerblue;
