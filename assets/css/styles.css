@@ -63,12 +63,58 @@ img {
   font-size: 29pt;
   font-weight: bold;
   margin-top: 40px;
+  color: #3C6BC2;
+}
+.color-title{
+  color: #3C6BC2;
 }
 #menu {
   display: flex;
   list-style: none;
   gap: 0.5rem;
   font-size: 1.1rem;
+}
+#btn-mobile{
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  #menu, .btn__form {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: rgb(161, 185, 230);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #navbar.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+
+    color: white;
+    font-weight: bold;
+  }
 }
 header li{
   list-style: none;
@@ -107,11 +153,6 @@ header li:hover{
   color: white;
   background: none;
   border: solid white;
-}
-@media only screen and (max-width: 600px) {
-  .btn__form{
-    display: none;
-  }
 }
 .btn__form1, .btn__form2:hover{
   cursor: pointer;
@@ -181,7 +222,7 @@ header li:hover{
   display: flex;
   justify-content: center;
   text-justify: center;
-
+  
   font-size: 1.5rem;
   color: #777;
 }
@@ -312,6 +353,11 @@ header li:hover{
 
   background-color: cornflowerblue;
   color: white;
+}
+@media only screen and (max-width: 600px){
+  .footer{
+    flex-flow: column wrap;
+  }
 }
 
 .titulo__footer__fontes, .titulo__footer__pessoas{
@@ -538,9 +584,9 @@ header li:hover{
   text-align: center;
 }
 
-.btn-primary {
-  color: red;
-  background-color: cornflowerblue;
+.btn-primary1 {
+  color: cornflowerblue;
+  background-color: white;
   border: none;
   border-radius: .3em;
   font-weight: bold;
@@ -559,8 +605,8 @@ header li:hover{
 }
 @media only screen and (max-width: 600px){
   .content-section{
-    display: block;
-    margin-bottom: 20vh;
+    display: flex;
+    flex-flow: column wrap;
   }
 }
 .shop-item-title {

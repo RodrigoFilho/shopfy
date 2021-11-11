@@ -7,16 +7,18 @@ $Conexao = new Conexao();
 //botao login
 if(isset($_POST["entrar"])){
     $result = $Conexao->login();
+    //var_dump($result); die();
     //testar se login deu certo
-    if ($result > 0){
+    if ($result != 0){
         //login correto / enviar para tela inicial do sistema
         header('location:../index.html');
     }else{
+        //var_dump($result); die();
         //login incorreto / dar a mensagem de erro para o usuário
-        echo "<script>alert('Login ou senha incorretos.'</script>)";
+        echo "<script>alert('Login ou senha insocrretos');</script>";
+        //$erro = "Login ou senha incorretos.";
     }
 }
-
 ?>
 
 <!DOCTYPE HTML>
