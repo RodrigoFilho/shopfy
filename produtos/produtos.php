@@ -43,20 +43,20 @@ $ListaProdutos = $Produtos->ListarTodos();
 
   <!-- navbar -->
   <header id="header__nav">
-    <img src="/assets/img/favico.ico" alt="" class="img__nav" href="#">
+    <img src="../assets/img/favico.ico" alt="" class="img__nav" href="#">
     <nav id="navbar">
       <button id="btn-mobile">Menu <i class="fas fa-bars"></i></button>
       <ul id="menu">
         <li><a href="index.html" style="color: white; text-decoration: none;"> Produtos</a></li>
         <li>Lojas</li>
-        <li><a href="/index.html" style="color: white; text-decoration: none;">Ofertas</a></li>
+        <li><a href="../index.php" style="color: white; text-decoration: none;">Ofertas</a></li>
         <li><a href="#categoria" style="color: white; text-decoration: none;">Promoções</a></li>
         <li>Contato</li>
       </ul>
     </nav>
     <div class="btn-form">
       <button class="btn__form" href="" onClick="abrirCadastro()"><i class="fas fa-user"></i> Cadastrar</button>
-      <button class="btn__form" href="" onClick="abrirLogin()"><i class="fas fa-sign-in-alt"></i> Entrar</button>
+      <button class="btn__form"> <a href="../login/login.php" style="color: white; text-decoration: none;"><i class="fas fa-sign-in-alt"></i> Entrar</a></button>
     </div>
   </header>
   <div class="categoria__nav">
@@ -114,26 +114,26 @@ $ListaProdutos = $Produtos->ListarTodos();
   </div>
 
   <!--Card dos produtos-->
-
+  <section class="container1 content-section">
   <?php 
     foreach($ListaProdutos as $Obj){
   ?>
-  <section class="container1 content-section">
+
     <div class="shop-items">
-      <div id="categoria">
+      <div class="<?php echo $Obj->categoria ?>">
         <div class="shop-item">
           <span class="shop-item-title"><?php echo $Obj->nome ?></span>
           <img class="shop-item-image" src="<?php echo $Obj->foto ?>">
           <div class="shop-item-details">
-            <span class="shop-item-price"><?php echo $Obj->preco ?></span>
+            <span class="shop-item-price">R$<?php echo $Obj->preco ?></span>
             <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
           </div>
         </div>
       </div>
     </div>
-    </section>
+
   <?php } ?>
- 
+     </section>
 
   <!-- carrinho -->
   <section class="container content-section2">

@@ -326,21 +326,7 @@ $ListaProdutos = $Produtos->ListarTodos();
     </div>
   </section>
 <
-<?php 
-  foreach($ListaProdutos as $Obj){
-?>
-  <div class="card-1">
-    <img src="<?php echo $Obj->foto ?>" alt="" class="card__img-1">
-     <div class="card__content-1">
-        <div class="card__data-1">
-            <h1 class="card__title-1"><?php echo $Obj->nome ?></h1>
-            <span class="card__preci-1"><?php echo $Obj->preco ?></span>
-            <a class="card__button-1" href="/assets/produtos/produtos.html" type="button">Comprar agora </a>
-        </div>
-      </div>
-  </div>
-<?php } ?>
-  -->
+
   <!-- rodapé -->
   <footer class="footer">
     <div class="footer__pessoas">

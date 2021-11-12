@@ -11,7 +11,7 @@ if(isset($_POST["entrar"])){
     //testar se login deu certo
     if ($result != 0){
         //login correto / enviar para tela inicial do sistema
-        header('location:../index.html');
+        header('location:../index.php');
     }else{
         //var_dump($result); die();
         //login incorreto / dar a mensagem de erro para o usuário
