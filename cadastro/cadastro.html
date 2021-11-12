@@ -1,17 +1,3 @@
-<?php
-header("Content-type:text/html; charset=utf8");
-require_once "Conexao.php";
-$Conexao = new Conexao();
-
-if(isset($_POST["cadastrar"])){
-
-    $result = $Conexao->inserir();
-
-    if($result != 0){
-        header('location: ../index.php');
-    }
-}
-?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 <html>
@@ -22,6 +8,7 @@ if(isset($_POST["cadastrar"])){
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="cadastro_style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://kit.fontawesome.com/17c7aef599.js" crossorigin="anonymous"></script>
@@ -39,12 +26,18 @@ if(isset($_POST["cadastrar"])){
         <div class="user_image">
           <img src="img/Design sem nome.png" alt="">
         </div>
+        <!--<div class="error__message" id="error-message">
+          <!--<?php 
+            $erroMessage = 
+          ?>-->
+          <!--<p class="text_message"><i class="fas fa-info"></i>  Parametros incorretos</p>
+        </div> -->
         <input type="text" id="usuario" placeholder="&#xf0e0;  E-mail" />
         <input type="text" id="usuario" placeholder="&#xf007;  Usuário" />
         <input type="password" id="senha" placeholder="&#xf023;  Senha" />
         <br>
         <br>
-        <button name="cadastrar">CADASTRAR</button>
+        <button>CADASTRAR</button>
       </form>
     </div>
 </body>
