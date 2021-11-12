@@ -1,7 +1,7 @@
 <?php
 header("Content-type:text/html; charset=utf8");
 //importa a classe conexão
-require_once "Conexao.php";
+require_once "../classes/Conexao.php";
 //criar uma instância da classe conexão login
 $Conexao = new Conexao();
 //botao login

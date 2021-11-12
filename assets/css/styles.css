@@ -597,11 +597,11 @@ header li:hover{
 }
 /* produtos 2 */
 .content-section{
-  height: 55vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 11vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 23px; 
 }
 @media only screen and (max-width: 600px){
   .content-section{
@@ -641,9 +641,8 @@ header li:hover{
 }
 
 .shop-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-area: 1 / 1 / 5 / 5; 
   width: 30vh;
   padding-top: 1.5%;
   padding-bottom: 2%;
