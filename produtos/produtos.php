@@ -45,7 +45,10 @@ $ListaProdutos = $Produtos->ListarTodos();
   <header id="header__nav">
     <img src="../assets/img/favico.ico" alt="" class="img__nav" href="#">
     <nav id="navbar">
-      <button id="btn-mobile">Menu <i class="fas fa-bars"></i></button>
+    <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul id="menu">
         <li><a href="index.html" style="color: white; text-decoration: none;"> Produtos</a></li>
         <li>Lojas</li>

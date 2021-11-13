@@ -48,6 +48,10 @@ $ListaProdutos = $Produtos->ListarTodos();
   <header id="header__nav">
     <img src="../shopfy-1/assets/img/favico.ico" alt="" class="img__nav" href="#">
     <nav id="navbar">
+    <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul id="menu">
         <li><a href="produtos/produtos.php" style="color: white; text-decoration: none;"> Produtos</a></li>
         <li>Lojas</li>
@@ -333,10 +337,10 @@ $ListaProdutos = $Produtos->ListarTodos();
       <br>
       <li>Rodrigo Filho</li>
       <li>Felipe Lauria</li>
-      <li>Alex Monster</li>
+      <li>Alex Koester</li>
       <li>Lucas nn sei oq</li>
       <li>Matheus Gama</li>
-      <li>Robson Lindo</li>
+      <li>Robson Ta, deu</li>
       <div class="footer__icons">
         <div class="footer__icons__instagram">
           <i class="fab fa-instagram" title="Instagram"></i>
