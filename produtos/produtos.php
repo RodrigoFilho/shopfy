@@ -115,9 +115,10 @@ $ListaProdutos = $Produtos->ListarTodos();
 
   <!--Card dos produtos-->
   <section class="container1 content-section">
-  <?php 
-    foreach($ListaProdutos as $Obj){
-  ?>
+  <?php
+    if($ListaProdutos != 0) { ?>
+    <?php foreach($ListaProdutos as $Obj){?>
+ 
 
     <div class="shop-items">
       <div class="<?php echo $Obj->categoria ?>">
@@ -132,6 +133,9 @@ $ListaProdutos = $Produtos->ListarTodos();
       </div>
     </div>
 
+  <?php } ?>
+  <?php }else{ ?>
+  <?php echo "<h1>Não nenhum produto foi encontrado!</h1>" ?>
   <?php } ?>
      </section>
 

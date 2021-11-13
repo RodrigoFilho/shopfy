@@ -11,7 +11,6 @@ $ListaProdutos = $Produtos->ListarTodos();
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -88,13 +87,13 @@ $ListaProdutos = $Produtos->ListarTodos();
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/78911260.png" class="d-block w-100" alt="...">
+          <img src="assets/img/1.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/img.png" class="d-block w-100" alt="...">
+          <img src="assets/img/2.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/55.png" class="d-block w-100" alt="...">
+          <img src="assets/img/3.png" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -336,6 +335,8 @@ $ListaProdutos = $Produtos->ListarTodos();
       <li>Felipe Lauria</li>
       <li>Alex Monster</li>
       <li>Lucas nn sei oq</li>
+      <li>Matheus Gama</li>
+      <li>Robson Lindo</li>
       <div class="footer__icons">
         <div class="footer__icons__instagram">
           <i class="fab fa-instagram" title="Instagram"></i>
