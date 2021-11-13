@@ -87,11 +87,11 @@ img {
   display: none;
 }
 @media (max-width: 952px){
-  label.logo{
+  .img__nav{
     font-size: 30px;
     padding-left: 50px;
   }
-  nav ul li a{
+  .a__menu{
     font-size: 16px;
   }
 }
@@ -120,7 +120,7 @@ img {
   nav ul li a{
     font-size: 20px;
   }
-  nav a:hover,nav a.active{
+  .a__menu:hover,.a__menu.active{
     background: none;
     color: #0082e6;
   }
@@ -179,7 +179,7 @@ header li:hover{
   color: white;
 }
 .categoria__nav li{
-  margin: 1px 40px 5px 40px;
+  margin: 0vh 4vh 5vh 3vh;
   list-style: none;
 }
 .categoria__nav li:hover{
@@ -682,6 +682,8 @@ header li:hover{
 
 .shop-item-price {
   flex-grow: 1;
+  font-weight: bold;
+
   color: white;
 }
 
@@ -696,8 +698,19 @@ header li:hover{
   background-color: cornflowerblue;
 }
 .shop-item-button{
+  height: 4.5vh;
   width: 10vh;
-}
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
 
+  color: cornflowerblue;
+  background-color: white;
+}
+.shop-item-button:hover{
+  transform: scale(1.1);
+  border: 1px solid whitesmoke;
+  box-shadow: 3px 3px 4px 3px;
+}
 
 

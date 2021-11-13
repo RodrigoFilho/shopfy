@@ -53,10 +53,10 @@ $ListaProdutos = $Produtos->ListarTodos();
         <i class="fas fa-bars"></i>
       </label>
       <ul id="menu">
-        <li><a href="produtos/produtos.php" style="color: white; text-decoration: none;"> Produtos</a></li>
+        <li><a class="a__menu" href="produtos/produtos.php" style="color: white; text-decoration: none;"> Produtos</a></li>
         <li>Lojas</li>
         <li>Ofertas</li>
-        <li><a href="#categoria" style="color: white; text-decoration: none;">Promoções</a></li>
+        <li><a href="#categoria" class="a__menu" style="color: white; text-decoration: none;">Promoções</a></li>
         <li>Contato</li>
       </ul>
     </nav>
@@ -67,11 +67,17 @@ $ListaProdutos = $Produtos->ListarTodos();
   </header>
   <div class="categoria__nav">
     <ul class="categoria__menu">
+    <li>|</li>
       <li><a href="#categoria" style="color: white; text-decoration: none;">Bebidas</a></li>
+      <li>|</li>
       <li>Doces</li>
+      <li>|</li>
       <li>Vinhos</li>
+      <li>|</li>
       <li>Carnes</li>
+      <li>|</li>
       <li>Limpesa</li>
+      <li>|</li>
     </ul>
   </div>
   <div class="titulo__promo">

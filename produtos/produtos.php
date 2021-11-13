@@ -50,7 +50,7 @@ $ListaProdutos = $Produtos->ListarTodos();
         <i class="fas fa-bars"></i>
       </label>
       <ul id="menu">
-        <li><a href="index.html" style="color: white; text-decoration: none;"> Produtos</a></li>
+        <li><a href="../index.php" style="color: white; text-decoration: none;"> Produtos</a></li>
         <li>Lojas</li>
         <li><a href="../index.php" style="color: white; text-decoration: none;">Ofertas</a></li>
         <li><a href="#categoria" style="color: white; text-decoration: none;">Promoções</a></li>
@@ -64,11 +64,17 @@ $ListaProdutos = $Produtos->ListarTodos();
   </header>
   <div class="categoria__nav">
     <ul class="categoria__menu">
+      <li>|</li>
       <li><a href="#categoria" style="color: white; text-decoration: none;">Bebidas</a></li>
+      <li>|</li>
       <li>Doces</li>
+      <li>|</li>
       <li>Vinhos</li>
+      <li>|</li>
       <li>Carnes</li>
+      <li>|</li>
       <li>Limpesa</li>
+      <li>|</li>
     </ul>
   </div>
   <div class="titulo__promo">
@@ -130,7 +136,7 @@ $ListaProdutos = $Produtos->ListarTodos();
           <img class="shop-item-image" src="<?php echo $Obj->foto ?>">
           <div class="shop-item-details">
             <span class="shop-item-price">R$<?php echo $Obj->preco ?></span>
-            <button class="btn btn-primary shop-item-button" type="button">Comprar</button>
+            <button class="shop-item-button" type="button">Comprar</button>
           </div>
         </div>
       </div>
@@ -154,7 +160,7 @@ $ListaProdutos = $Produtos->ListarTodos();
     </div>
     <div class="cart-total">
       <strong class="cart-total-title">Total</strong>
-      <span class="cart-total-price">$0.00</span>
+      <span class="cart-total-price">R$0.00</span>
     </div>
     <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
   </section>
